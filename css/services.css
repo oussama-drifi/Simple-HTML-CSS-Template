@@ -1,0 +1,76 @@
+.services-wrapper{/*make space batween sections*/
+    margin: 80px 0;
+}
+.services-wrapper .title h1{/*style the section title*/
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+.services-wrapper .cards{/*space between cards and button*/
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-wrapper .cards > div{/*main cards styles*/
+    background: var(--light-background);
+    padding: 13px;
+    border-radius: 10px;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    transition-duration: var(--main-transition);
+    box-shadow: var(--secondary-box-shadow);
+    margin-bottom: 15px;
+}
+.services-wrapper .cards > div:hover{/*cards hover animation*/
+    transform: scale(1.03);
+}
+.services-wrapper .cards > div > i{/*background icon*/
+    position: absolute;
+    font-size: 50px;
+    color: #5e17eb2d;
+    top: 13px;
+    right: 13px;
+}
+/*start making the second card different*/
+.services-wrapper .cards > div:nth-child(2){
+    background: var(--merge-gradient);
+    color: var(--lightColor);
+    transform: scale(1.055);
+}
+.services-wrapper .cards > div:nth-child(2) > i{
+    color: #f0e4ff6b;
+}
+.services-wrapper .cards > div:nth-child(2) h3{
+    color: var(--lightColor);
+}
+/*end making the second card different*/
+.services-wrapper .cards > div p{/*make some space*/
+    margin-bottom: 10px;
+}
+.services-wrapper .cards > div .card-img{/*customize img container*/
+    width: 100%;
+    min-height: 150px;
+    max-height: 180px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+}
+.services-wrapper .cards > div .card-img img{
+    width: 100%;
+}
+/*srvices cards background images*/
+.services-wrapper .cards > div:first-child .card-img{
+    background-image: url(../images/cardasset4.jpg);
+}
+.services-wrapper .cards > div:nth-child(2) .card-img{
+    background-image: url(../images/cardasset3.png);
+}
+.services-wrapper .cards > div:nth-child(3) .card-img{
+    background-image: url(../images/cardasset1.png);
+}
+.services-wrapper .cards > div:last-child .card-img{
+    background-image: url(../images/cardasset2.png);
+}

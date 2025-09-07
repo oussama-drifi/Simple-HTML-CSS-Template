@@ -1,0 +1,26 @@
+.main-section{
+    margin: 0 15px;
+    background-image: url(../images/backimage.png);
+    min-height: 500px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    padding: 80px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.main-section .content-wrapper{
+    width: 100%;
+    color: var(--lightColor);
+    z-index: 3;
+}
+.main-section .content-wrapper h1{
+    font-size: 40px;
+    line-height: 1.25;
+}
+.main-section .content-wrapper p{
+    margin-bottom: 20px;
+}

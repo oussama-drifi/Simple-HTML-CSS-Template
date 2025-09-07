@@ -1,0 +1,81 @@
+.about-wrapper{
+    margin-top:25px;
+    position: relative;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+/* not the shape */
+.about-wrapper > div:not(:first-child){
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+/*the img with card*/
+.img-wrapper{
+    background-image: url(../images/marketingasset.jpg);
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    border-radius: 15px;
+    height: 430px;
+    overflow: hidden;
+}
+.img-wrapper::before{
+    background-color: #1900344c;
+}
+/*the card inside about img*/
+.img-wrapper > div{
+    background-color: var(--lightColor);
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.25;
+}
+.img-wrapper > div img{
+    width: 70px;
+}
+.about-wrapper .content{
+    background: var(--light-background);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.about-wrapper .content .two-cards > div{
+    background: var(--background);
+    padding: 10px;
+    width: 49%;
+    border-radius: 10px;
+}
+.about-wrapper .content .two-cards > div i{
+    background: var(--lightColor);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: var(--mainColor);
+}
+.about-left-shape{
+    width: 200px;
+    height: 200px;
+    z-index: -2;
+    left: -70px;
+    top: -70px;
+    filter: blur(150px);
+}
+
+.about-right-shape{
+    width: 200px;
+    height: 200px;
+    z-index: -2;
+    right: -100px;
+    bottom: -70px;
+    filter: blur(150px);
+    display: none;
+}

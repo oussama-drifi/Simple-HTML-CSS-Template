@@ -1,0 +1,20 @@
+.statistics-wrapper{
+    margin: 20px 0;
+    position: relative;
+    flex-wrap: wrap;
+}
+.statistics-wrapper > div{
+    text-align: center;
+    background: var(--background);
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.statistics-wrapper > div:nth-child(3){
+    background: var(--merge-gradient);
+    color: var(--lightColor);
+}
+.statistics-wrapper > div h1{
+    font-size: 30px;
+}

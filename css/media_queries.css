@@ -1,0 +1,247 @@
+@media (max-width: 450px) {
+    /*about section > content > two cards*/
+    .about-wrapper .content .two-cards{
+        flex-wrap: wrap;
+    }
+    .about-wrapper .content .two-cards > div{
+        width: 100%;
+    }
+    .about-wrapper .content .two-cards > div:first-child{
+        margin-bottom: 10px;
+    }
+    /*profiles section*/
+    .profiles-wrapper .profiles > div:hover .card-body p{
+        margin-bottom: 60px;
+    }
+}
+@media (min-width: 540px) and (max-width: 767px){
+    /*main section*/
+    .main-section .content-wrapper h1{
+        font-size: 50px;
+    }
+    /*statistics section*/
+    .statistics-wrapper > div{
+        width: 49%;
+    }
+    /*services section*/
+    .services-wrapper .title h1{
+        width: 100%;
+    }
+    .services-wrapper .cards{
+        justify-content: center;
+    }
+    .services-wrapper .cards > div{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    /*pricing section*/
+    .pricing-wrapper .tables > div{
+        width: 60%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .container{
+        width: 750px;
+    }
+    /*main section*/
+    .main-section .content-wrapper h1{
+        font-size: 50px;
+    }
+    /*statistics section*/
+    .statistics-wrapper > div{
+        width: 24%;
+    }
+    /*services section*/
+    .services-wrapper .cards{
+        gap: 20px;
+    }
+    .services-wrapper .cards > div{
+        width: 48%;
+    }
+    .services-wrapper .cards > div:nth-child(2){
+        transform: scale(1.055);
+    }
+    /*pricing section*/
+    .pricing-wrapper .tables{
+        gap: 20px;
+    }
+    .pricing-wrapper .tables > div{
+        width: 48%;
+    }
+    .pricing-wrapper .tables > div:nth-child(2){
+        transform: scale(1);
+    }
+    /*profiles section*/
+    .profiles-wrapper .profiles{
+        justify-content: space-between;
+    }
+    .profiles-wrapper .profiles > div{
+        width: 49%;
+        margin-bottom: 20px;
+    }
+    /*footer section*/
+    .footer-container > div{
+        width: 48%;
+    }
+    .footer-social h4 span{
+        display: block;
+        width: fit-content;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container{
+        width: 970px;
+    }
+    /*header responsiveness*/
+    header .header-links{
+        display: block;
+    }
+    header > .header-icons{
+        display: block;
+    }
+    header .icon-menu{
+        display: none;
+    }
+    /*main section responsiveness*/
+    .main-section{
+        padding: 80px;
+    }
+    .main-section .content-wrapper{
+        width: 70%;
+    }
+    .main-section .content-wrapper h1{
+        font-size: 50px;
+    }
+    /*about section resopnsiveness*/
+    .about-wrapper{
+        margin-top: 50px;
+        flex-direction: row;
+    }
+    .img-wrapper{
+        height: 540px;
+    }
+    .about-wrapper > div:not(:first-child){
+        margin-bottom: 0;
+        width: 49%;
+    }
+    /*statistics section*/
+    .statistics-wrapper > div{
+        width: 24%;
+    }
+    /*services section*/
+    .services-wrapper .cards{
+        gap: 20px;
+    }
+    .services-wrapper .cards > div{
+        width: 40%;
+    }
+    .services-wrapper .cards > div:nth-child(2){
+        transform: scale(1.055);
+    }
+    /*pricing section*/
+    .pricing-wrapper .tables{
+        gap: 20px;
+    }
+    .pricing-wrapper .tables > div{
+        width: 48%;
+    }
+    .pricing-wrapper .tables > div:nth-child(2){
+        transform: scale(1);
+    }
+    /*profiles section*/
+    .profiles-wrapper .profiles{
+        justify-content: space-between;
+    }
+    .profiles-wrapper .profiles > div{
+        width: 49%;
+        margin-bottom: 20px;
+    }
+    /*footer section*/
+    .footer-container > div{
+        width: 48%;
+    }
+}
+@media (min-width: 1200px) /*to infinity*/ {
+    .container{
+        width: 1170px;
+    }
+    header .header-links{
+        display: block;
+    }
+    header > .header-icons{
+        display: block;
+    }
+    header .icon-menu{
+        display: none;
+    }
+    /*main section*/
+    .main-section{
+        padding: 80px;
+    }
+    .main-section .content-wrapper{
+        width: 60%;
+    }
+    .main-section .content-wrapper h1{
+        font-size: 60px;
+    }
+    /*about section resopnsiveness*/
+    .about-wrapper{
+        flex-direction: row;
+        margin-top: 50px;
+    }
+    .about-wrapper > div:not(:first-child){
+        margin-bottom: 0;
+        width: 49%;
+    }
+    .about-wrapper .about-right-shape{
+        display: block;
+    }
+    /*statistics section responsiveness*/
+    .statistics-wrapper > div{
+        width: 24%;
+    }
+    /*services section*/
+    .services-wrapper .title h1{
+        width: 65%;
+    }
+    .services-wrapper .cards{
+        justify-content: space-between;
+    }
+    .services-wrapper .cards > div{
+        width: 24%;
+    }
+    .services-wrapper .cards > div:nth-child(2){
+        transform: scale(1.055);
+    }
+    /*pricing section*/
+    .pricing-wrapper .tables{
+        justify-content: space-between;
+        gap: 0px;
+    }
+    .pricing-wrapper .tables > div{
+        width: 32%;
+    }
+    .pricing-wrapper .pricing-shape-2{
+        display: block;
+    }
+    /*profiles section*/
+    .profiles-wrapper .profiles{
+        justify-content: space-between;
+    }
+    .profiles-wrapper .profiles > div{
+        width: 24%;
+    }
+    .profiles-wrapper .profiles > div:hover .card-body p{
+        margin-bottom: 50px;
+    }
+    /*footer section*/
+    .footer-container{
+        gap: 0;
+    }
+    .footer-container > div:nth-child(2){ /*the second container smaller than others*/
+        width: 19%;
+    }
+    .footer-container > div:not(:nth-child(2)){
+        width: 27%;
+    }
+}

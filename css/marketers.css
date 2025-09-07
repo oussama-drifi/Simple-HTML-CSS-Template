@@ -1,0 +1,124 @@
+.profiles-wrapper{
+    margin: 80px 0;
+}
+.profiles-wrapper .title h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/*style the cards*/
+.profiles-wrapper .profiles{
+    min-height: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.profiles-wrapper .profiles > div{
+    width: 90%;
+    margin-bottom: 20px;
+    background: var(--light-background);
+    color: var(--darkColor);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--secondary-box-shadow);
+}
+.profiles-wrapper .profiles > div:nth-child(3){
+    background: var(--dark-gradient);
+    color: var(--lightColor);
+}
+/*profile card head styles*/
+.profiles-wrapper .profiles > div .card-head{
+    height: 100px;
+    position: relative;
+    background: var(--merge-gradient);
+    border-radius: 0 0 50px 50px;
+}
+.profiles-wrapper .profiles > div .card-head img{
+    width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 30%);
+    border: 3px solid var(--lightColor);
+}
+.profiles-wrapper .profiles > div .card-body{
+    padding: 0 20px;
+}
+/*profile card body styles*/
+.profiles-wrapper .profiles > div .card-body h2{
+    margin: 10px 0 0;
+}
+.profiles-wrapper .profiles > div .card-body h5{
+    margin: 0 0 10px;
+    color: var(--grayColor);
+}
+.profiles-wrapper .profiles > div:nth-child(3) .card-body h5{
+    color: var(--lightColor);
+}
+.profiles-wrapper .profiles > div .card-body .social-media{
+    padding: 0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.profiles-wrapper .profiles > div .card-body .social-media a i{
+    font-size: 25px;
+    transition-duration: var(--main-transition);
+}
+.profiles-wrapper .profiles > div .card-body .social-media a i:hover{
+    color: var(--mainColor);
+    transform: translateY(-5px);
+}
+.profiles-wrapper .profiles > div:nth-child(3) .card-body .social-media a i{
+    color: var(--lightColor);
+}
+.profiles-wrapper .profiles > div:hover .card-body p{
+    margin-bottom: 80px;
+    margin-top: 15px;
+}
+.profiles-wrapper .profiles > div .card-body p{
+    transition-duration: var(--main-transition);
+    margin-bottom: 25px;
+}
+/*style sliding tab*/
+.profiles-wrapper .profiles > div .card-slide{
+    position: absolute;
+    background: var(--merge-gradient);
+    backdrop-filter: blur(25px);
+    transition-duration: var(--main-transition);
+    border-radius: 15px;
+    width: 100%;
+    height: 37%;
+    bottom: -35%;
+    left: 0;
+}
+.profiles-wrapper .profiles > div:hover .card-slide{
+    bottom: 0;
+}
+.profiles-wrapper .profiles > div .card-slide .content .rating{
+    margin-bottom: 10px;
+    color: var(--lightColor);
+}
+.profiles-wrapper .profiles > div .card-slide .content .rating i{
+    color: gold;
+}
+.profiles-wrapper .profiles > div .card-slide .content .card-btns button{
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+}
+.profiles-wrapper .profiles > div .card-slide .content .card-btns button:last-child{
+    background: var(--darkColor);
+    color: var(--lightColor);
+}
+.profiles-wrapper .profiles > div .card-slide .content .card-btns button:first-child{
+    background: var(--lightColor);
+    color: var(--darkColor);
+}
