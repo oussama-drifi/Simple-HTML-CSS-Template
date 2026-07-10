@@ -1,2 +1,2 @@
 # Simple-HTML-CSS-Template
-to be descibed later again
+basic marketing agency landing page
